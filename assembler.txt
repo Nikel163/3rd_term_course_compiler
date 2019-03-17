@@ -1,0 +1,14 @@
+.main:
+push	rbp
+mov	rbp, rsp
+
+.for:
+cmp	DWORD PTR [rbp-4], 10
+jl	.exit:
+cmp	DWORD PTR [rbp-8], 50
+jne	.for:
+
+.exit:
+mov	eax, 0
+pop	rbp
+ret

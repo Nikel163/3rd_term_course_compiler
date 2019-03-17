@@ -1,0 +1,1 @@
+for(joge:=I;joge<XX;joge:=vox)do vox:=D;
